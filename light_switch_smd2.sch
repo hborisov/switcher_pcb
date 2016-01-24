@@ -2493,20 +2493,14 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="-9.5" y1="22" x2="5.5" y2="22" width="0.127" layer="21"/>
 </package>
 <package name="AC5V">
-<pad name="5V_VCC" x="1.7" y="1.7" drill="0.8"/>
-<pad name="5V_GND" x="1.72" y="18.31" drill="0.8" diameter="1.27" rot="R90"/>
-<pad name="AC1" x="33.24" y="12.24" drill="0.8"/>
-<pad name="AC2" x="33.24" y="7.76" drill="0.8"/>
+<pad name="5V_VCC" x="2.2" y="2.7" drill="0.8"/>
+<pad name="5V_GND" x="2.22" y="17.31" drill="0.8" diameter="1.27" rot="R90"/>
+<pad name="AC1" x="32.74" y="12.24" drill="0.8"/>
+<pad name="AC2" x="32.74" y="7.76" drill="0.8"/>
 <rectangle x1="0" y1="0" x2="35" y2="20" layer="21"/>
-<text x="0.5" y="13.5" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
-<dimension x1="0" y1="20" x2="1" y2="20" x3="0.5" y3="16.4" textsize="1.27" layer="21"/>
-<dimension x1="0" y1="20" x2="0" y2="19" x3="5" y3="19.5" textsize="1.27" layer="21"/>
-<dimension x1="0" y1="0" x2="1" y2="0" x3="0.5" y3="4.8" textsize="1.27" layer="21"/>
-<dimension x1="0" y1="0" x2="0" y2="1" x3="4.6" y3="0.5" textsize="1.27" layer="21"/>
-<rectangle x1="1.64" y1="1.8" x2="4.24" y2="18.3" layer="21"/>
-<dimension x1="35" y1="20" x2="34" y2="20" x3="34.5" y3="9.06" textsize="1.27" layer="21"/>
-<rectangle x1="33.34" y1="7.76" x2="34.27" y2="12.24" layer="21"/>
-<dimension x1="33.34" y1="7.76" x2="33.34" y2="12.24" x3="43.13" y3="10" textsize="1.27" layer="21"/>
+<text x="-0.77" y="21.12" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
+<dimension x1="0" y1="0" x2="35" y2="0" x3="17.5" y3="-2.54" textsize="1.27" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="20" x3="-3.81" y3="10" textsize="1.27" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -2743,6 +2737,7 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="93.98" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="LAMP" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<junction x="116.84" y="38.1"/>
 </segment>
 </net>
 <net name="N$11" class="0">
