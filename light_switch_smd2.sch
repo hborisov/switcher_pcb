@@ -2493,10 +2493,10 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="-9.5" y1="22" x2="5.5" y2="22" width="0.127" layer="21"/>
 </package>
 <package name="AC5V">
-<pad name="5V_VCC" x="2.2" y="2.7" drill="0.8"/>
-<pad name="5V_GND" x="2.22" y="17.31" drill="0.8" diameter="1.27" rot="R90"/>
-<pad name="AC1" x="32.74" y="12.24" drill="0.8"/>
-<pad name="AC2" x="32.74" y="7.76" drill="0.8"/>
+<pad name="5V_VCC" x="1.7" y="2.7" drill="0.8" diameter="1.6764"/>
+<pad name="5V_GND" x="1.72" y="17.31" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="AC1" x="33.24" y="12.24" drill="0.8" diameter="1.6764"/>
+<pad name="AC2" x="33.24" y="7.76" drill="0.8" diameter="1.6764"/>
 <rectangle x1="0" y1="0" x2="35" y2="20" layer="21"/>
 <text x="-0.77" y="21.12" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
 <dimension x1="0" y1="0" x2="35" y2="0" x3="17.5" y3="-2.54" textsize="1.27" layer="20"/>
@@ -2600,8 +2600,8 @@ The old path of data sheet not more available 2013-05-06.</description>
 <part name="U$2" library="myblog_library" deviceset="ESP8266-01" device=""/>
 <part name="U$1" library="myblog_library" deviceset="HI-LINK5V-ACDC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="LAMP" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="AC" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="LAMP" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="LAMP"/>
+<part name="AC" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="AC"/>
 </parts>
 <sheets>
 <sheet>
