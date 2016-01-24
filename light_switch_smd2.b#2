@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -145,11 +145,12 @@
 <wire x1="36.6" y1="43.7" x2="0.1" y2="43.7" width="0" layer="20"/>
 <wire x1="0.1" y1="43.7" x2="0" y2="-1" width="0" layer="20"/>
 <dimension x1="0.1" y1="-1" x2="36.7" y2="-1" x3="18.4" y3="-5.4" textsize="1.778" layer="16"/>
-<text x="23.3" y="5.4" size="1.778" layer="16" rot="MR90">Hristo Borisov
-Light Switch
-Rev. 0.1 Prototype</text>
 <hole x="17.4" y="41" drill="3.2"/>
 <hole x="18.3" y="0.8" drill="3.2"/>
+<text x="32" y="26" size="1.778" layer="16" rot="MR270">Hristo Borisov
+Light Switch
+Prototype
+Rev. 0.3</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -309,10 +310,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="myblog_library">
 <packages>
 <package name="AC5V">
-<pad name="5V_VCC" x="2.2" y="2.7" drill="0.8"/>
-<pad name="5V_GND" x="2.22" y="17.31" drill="0.8" diameter="1.27" rot="R90"/>
-<pad name="AC1" x="32.74" y="12.24" drill="0.8"/>
-<pad name="AC2" x="32.74" y="7.76" drill="0.8"/>
+<pad name="5V_VCC" x="1.7" y="2.7" drill="0.8" diameter="1.6764"/>
+<pad name="5V_GND" x="1.72" y="17.31" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="AC1" x="33.24" y="12.24" drill="0.8" diameter="1.6764"/>
+<pad name="AC2" x="33.24" y="7.76" drill="0.8" diameter="1.6764"/>
 <rectangle x1="0" y1="0" x2="35" y2="20" layer="21"/>
 <text x="-0.77" y="21.12" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
 <dimension x1="0" y1="0" x2="35" y2="0" x3="17.5" y3="-2.54" textsize="1.27" layer="20"/>
@@ -639,8 +640,8 @@ design rules under a new name.</description>
 <element name="U1" library="SparkFun-PowerIC" package="SOT223" value="LM1117" x="12.58" y="32.06">
 <attribute name="PROD_ID" value="VREG-08170" x="12.58" y="32.06" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LAMP" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="31" y="42"/>
-<element name="AC" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="0.8" y="41.9"/>
+<element name="LAMP" library="SparkFun-Connectors" package="1X03_NO_SILK" value="LAMP" x="31" y="42"/>
+<element name="AC" library="SparkFun-Connectors" package="1X03_NO_SILK" value="AC" x="0.8" y="41.9"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -663,9 +664,9 @@ design rules under a new name.</description>
 <wire x1="5.4" y1="22.8" x2="2" y2="19.4" width="0.4064" layer="16"/>
 <wire x1="2" y1="19.4" x2="2" y2="16.21" width="0.4064" layer="16"/>
 <wire x1="2" y1="16.21" x2="2.02" y2="16.19" width="0.4064" layer="16"/>
-<wire x1="33.49" y1="3.77" x2="33.49" y2="14.21" width="0.4064" layer="16"/>
-<wire x1="33.49" y1="14.21" x2="25" y2="22.7" width="0.4064" layer="16"/>
-<wire x1="25" y1="22.7" x2="8.3" y2="22.7" width="0.4064" layer="16"/>
+<wire x1="33.49" y1="3.27" x2="33.49" y2="27.71" width="0.4064" layer="16"/>
+<wire x1="33.49" y1="27.71" x2="19.5" y2="22.7" width="0.4064" layer="16"/>
+<wire x1="19.5" y1="22.7" x2="8.3" y2="22.7" width="0.4064" layer="16"/>
 <wire x1="8.3" y1="22.7" x2="8.2" y2="22.8" width="0.4064" layer="16"/>
 <wire x1="2.02" y1="16.19" x2="2.02" y2="6.68" width="0.4064" layer="16"/>
 <wire x1="2.02" y1="6.68" x2="4.14" y2="4.56" width="0.4064" layer="16"/>
@@ -788,8 +789,8 @@ design rules under a new name.</description>
 <wire x1="1.2" y1="39.4" x2="1.2" y2="35.5" width="0.4064" layer="16"/>
 <wire x1="1.2" y1="35.5" x2="2.5" y2="34.2" width="0.4064" layer="16"/>
 <wire x1="2.5" y1="34.2" x2="23.85" y2="34.2" width="0.4064" layer="16"/>
-<wire x1="23.85" y1="34.2" x2="23.94" y2="34.29" width="0.4064" layer="16"/>
-<wire x1="23.94" y1="34.29" x2="23.94" y2="33.56" width="0.4064" layer="16"/>
+<wire x1="23.85" y1="34.2" x2="23.94" y2="34.79" width="0.4064" layer="16"/>
+<wire x1="23.94" y1="34.79" x2="23.94" y2="33.56" width="0.4064" layer="16"/>
 <wire x1="23.94" y1="33.56" x2="26.5" y2="31" width="0.4064" layer="16"/>
 <wire x1="26.5" y1="31" x2="30" y2="31" width="0.4064" layer="16"/>
 <wire x1="30" y1="31" x2="36" y2="37" width="0.4064" layer="16"/>
@@ -800,12 +801,12 @@ design rules under a new name.</description>
 <contactref element="T1" pad="1"/>
 <contactref element="U$1" pad="AC1"/>
 <contactref element="AC" pad="3"/>
-<wire x1="28.42" y1="34.29" x2="28.42" y2="36.65" width="0.4064" layer="16"/>
+<wire x1="28.42" y1="34.79" x2="28.42" y2="36.65" width="0.4064" layer="16"/>
 <wire x1="28.42" y1="36.65" x2="26.15" y2="38.92" width="0.4064" layer="16"/>
 <wire x1="5.88" y1="41.9" x2="10.1" y2="41.9" width="0.4064" layer="1"/>
-<wire x1="10.1" y1="41.9" x2="16.3" y2="35.7" width="0.4064" layer="1"/>
-<wire x1="16.3" y1="35.7" x2="25" y2="35.7" width="0.4064" layer="1"/>
-<wire x1="25" y1="35.7" x2="26.2" y2="36.9" width="0.4064" layer="1"/>
+<wire x1="10.1" y1="41.9" x2="16.3" y2="36.2" width="0.4064" layer="1"/>
+<wire x1="16.3" y1="36.2" x2="25" y2="36.2" width="0.4064" layer="1"/>
+<wire x1="25" y1="36.2" x2="26.2" y2="36.9" width="0.4064" layer="1"/>
 <wire x1="26.2" y1="36.9" x2="26.2" y2="38.87" width="0.4064" layer="1"/>
 <wire x1="26.2" y1="38.87" x2="26.15" y2="38.92" width="0.4064" layer="1"/>
 </signal>
@@ -819,7 +820,7 @@ design rules under a new name.</description>
 <wire x1="14.23" y1="25.27" x2="14.23" y2="25.17" width="0.4064" layer="1"/>
 <wire x1="14.23" y1="25.17" x2="18.9" y2="20.5" width="0.4064" layer="1"/>
 <wire x1="18.9" y1="20.5" x2="18.9" y2="3.77" width="0.4064" layer="1"/>
-<wire x1="18.9" y1="3.77" x2="18.88" y2="3.75" width="0.4064" layer="1"/>
+<wire x1="18.9" y1="3.77" x2="18.88" y2="3.25" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="J2" pad="2"/>
