@@ -2600,8 +2600,8 @@ The old path of data sheet not more available 2013-05-06.</description>
 <part name="U$2" library="myblog_library" deviceset="ESP8266-01" device=""/>
 <part name="U$1" library="myblog_library" deviceset="HI-LINK5V-ACDC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="LAMP" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="AC" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="LAMP" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="LAMP"/>
+<part name="AC" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="AC"/>
 </parts>
 <sheets>
 <sheet>
