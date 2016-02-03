@@ -367,11 +367,17 @@ UsedLibrary="/Users/hbb/D/dev/pic/eagle/Eagle-Libraries/triac.lbr"
 UsedLibrary="/Users/hbb/D/dev/projects/eagle_projects/myblog_library/myblog_library.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="0 -22 599 377"
+State=1
+Number=0
+
+[Win_2]
 Type="Schematic Editor"
 Loc="0 -22 599 377"
 State=0
 Number=2
-File="light_switch_smd2.sch"
+File="light_switch_smd3.sch"
 View="-18.4792 -7.69281 145.996 101.757"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -412,12 +418,6 @@ AddLevel=2
 PadsSameType=0
 Layer=91
 Sheet="1"
-
-[Win_2]
-Type="Control Panel"
-Loc="0 23 599 422"
-State=1
-Number=0
 
 [Desktop]
 Screen="1280 800"
