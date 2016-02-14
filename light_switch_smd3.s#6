@@ -1872,6 +1872,16 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="-5" y1="-4.5" x2="-5" y2="3.2" width="0.127" layer="51"/>
 <wire x1="0" y1="2.9" x2="0" y2="3.2" width="0.127" layer="51"/>
 </package>
+<package name="2X4_HDR">
+<smd name="P$3" x="1" y="2.6" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$4" x="3" y="2.6" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$2" x="-1" y="2.6" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$1" x="-3" y="2.6" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$6" x="1" y="-2.5" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$5" x="3" y="-2.5" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$7" x="-1" y="-2.5" dx="0.9" dy="2.54" layer="1"/>
+<smd name="P$8" x="-3" y="-2.5" dx="0.9" dy="2.54" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP8266-01">
@@ -1902,6 +1912,21 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <pin name="P1" x="-12.7" y="2.54" length="middle"/>
 <pin name="P2" x="-12.7" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="2X4_SMD_HDR">
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="P$1" x="-12.7" y="7.62" length="middle"/>
+<pin name="P$2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P$3" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P$4" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P$5" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$6" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$7" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="P$8" x="12.7" y="7.62" length="middle" rot="R180"/>
+<text x="-7.62" y="13.97" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1963,6 +1988,29 @@ The old path of data sheet not more available 2013-05-06.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="2X4-SMD-HEADER">
+<description>This is a 2x4 smd header</description>
+<gates>
+<gate name="G$1" symbol="2X4_SMD_HDR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X4_HDR">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1997,6 +2045,7 @@ The old path of data sheet not more available 2013-05-06.</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="LAMP" library="myblog_library" deviceset="DG306-5.0" device=""/>
 <part name="AC" library="myblog_library" deviceset="DG306-5.0" device=""/>
+<part name="U$3" library="myblog_library" deviceset="2X4-SMD-HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2024,6 +2073,7 @@ The old path of data sheet not more available 2013-05-06.</description>
 <instance part="GND4" gate="1" x="91.44" y="5.08"/>
 <instance part="LAMP" gate="G$1" x="144.78" y="35.56"/>
 <instance part="AC" gate="G$1" x="144.78" y="20.32"/>
+<instance part="U$3" gate="G$1" x="149.86" y="73.66"/>
 </instances>
 <busses>
 </busses>
