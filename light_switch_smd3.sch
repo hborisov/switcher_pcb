@@ -1852,25 +1852,30 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="-9.5" y1="22" x2="5.5" y2="22" width="0.127" layer="21"/>
 </package>
 <package name="AC5V">
-<pad name="5V_VCC" x="2.8" y="2.3" drill="0.8" diameter="1.6764"/>
+<pad name="5V_VCC" x="2.8" y="2.3" drill="1" diameter="1.6764"/>
 <pad name="5V_GND" x="2.82" y="17.71" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="AC1" x="32.14" y="12.44" drill="0.8" diameter="1.6764"/>
-<pad name="AC2" x="32.14" y="7.56" drill="0.8" diameter="1.6764"/>
+<pad name="AC1" x="32.14" y="12.44" drill="1" diameter="1.6764"/>
+<pad name="AC2" x="32.14" y="7.56" drill="1" diameter="1.6764"/>
 <rectangle x1="0" y1="0" x2="35" y2="20" layer="21"/>
 <text x="-0.77" y="21.12" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
 <dimension x1="2.8" y1="17.7" x2="2.8" y2="2.3" x3="-2.5" y3="10" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
 <dimension x1="32.1" y1="12.4" x2="32.1" y2="7.5" x3="37.2" y3="9.95" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
 <dimension x1="2.8" y1="17.7" x2="32.1" y2="17.7" x3="17.45" y3="21.7" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
 </package>
-<package name="DG306-PCKG">
-<pad name="P$1" x="-2.5" y="0" drill="1"/>
-<pad name="P$2" x="2.5" y="0" drill="1"/>
-<wire x1="5" y1="3.2" x2="0" y2="3.2" width="0.127" layer="51"/>
-<wire x1="0" y1="3.2" x2="-5" y2="3.2" width="0.127" layer="51"/>
-<wire x1="5" y1="3.1" x2="5" y2="-4.5" width="0.127" layer="51"/>
-<wire x1="5" y1="-4.5" x2="-5" y2="-4.5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-4.5" x2="-5" y2="3.2" width="0.127" layer="51"/>
-<wire x1="0" y1="2.9" x2="0" y2="3.2" width="0.127" layer="51"/>
+<package name="DG350-3.5-03P">
+<pad name="P$2" x="0" y="0" drill="0.8"/>
+<pad name="P$3" x="3.5" y="0" drill="0.8"/>
+<pad name="P$1" x="-3.5" y="0" drill="0.8"/>
+<wire x1="5.3" y1="-3.4" x2="5.3" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="-3.4" x2="-5.3" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="3.4" x2="0" y2="3.4" width="0.127" layer="21"/>
+<wire x1="0" y1="3.4" x2="5.3" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="-3.4" x2="5.3" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="0" y1="3.4" x2="0" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="3.3" x2="-2.9" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="3.3" x2="0.7" y2="3.3" width="0.127" layer="21"/>
+<wire x1="2.8" y1="3.3" x2="4.2" y2="3.3" width="0.127" layer="21"/>
+<text x="-4.7" y="-2.8" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1895,13 +1900,15 @@ The old path of data sheet not more available 2013-05-06.</description>
 <pin name="AC1" x="45.72" y="12.7" length="middle" rot="R180"/>
 <pin name="AC2" x="45.72" y="5.08" length="middle" rot="R180"/>
 </symbol>
-<symbol name="DG306-5.0">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="P1" x="-12.7" y="2.54" length="middle"/>
-<pin name="P2" x="-12.7" y="-2.54" length="middle"/>
+<symbol name="DG350-3.5-03P">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="P$2" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$3" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<text x="-5.08" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1946,16 +1953,17 @@ The old path of data sheet not more available 2013-05-06.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DG306-5.0">
-<description>Degson Terminal Pad (Blue)</description>
+<deviceset name="DG350-3.5-03P">
+<description>DG350-3.5-03P - terminal connector with 3.5mm step</description>
 <gates>
-<gate name="G$1" symbol="DG306-5.0" x="0" y="0"/>
+<gate name="G$1" symbol="DG350-3.5-03P" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DG306-PCKG">
+<device name="" package="DG350-3.5-03P">
 <connects>
-<connect gate="G$1" pin="P1" pad="P$1"/>
-<connect gate="G$1" pin="P2" pad="P$2"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1995,8 +2003,7 @@ The old path of data sheet not more available 2013-05-06.</description>
 <part name="U$2" library="myblog_library" deviceset="ESP8266-01" device=""/>
 <part name="U$1" library="myblog_library" deviceset="HI-LINK5V-ACDC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="LAMP" library="myblog_library" deviceset="DG306-5.0" device=""/>
-<part name="AC" library="myblog_library" deviceset="DG306-5.0" device=""/>
+<part name="AC+LAMP" library="myblog_library" deviceset="DG350-3.5-03P" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2022,8 +2029,7 @@ The old path of data sheet not more available 2013-05-06.</description>
 <instance part="U$2" gate="G$1" x="88.9" y="63.5"/>
 <instance part="U$1" gate="G$1" x="78.74" y="-5.08"/>
 <instance part="GND4" gate="1" x="91.44" y="5.08"/>
-<instance part="LAMP" gate="G$1" x="144.78" y="35.56"/>
-<instance part="AC" gate="G$1" x="144.78" y="20.32"/>
+<instance part="AC+LAMP" gate="G$1" x="144.78" y="35.56" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -2130,22 +2136,18 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="116.84" y1="33.02" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="OK1" gate="-1" pin="A2"/>
 <wire x1="93.98" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="AC+LAMP" gate="G$1" pin="P$1"/>
+<wire x1="116.84" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
 <junction x="116.84" y="38.1"/>
-<pinref part="LAMP" gate="G$1" pin="P1"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<wire x1="129.54" y1="33.02" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="AC2"/>
-<wire x1="129.54" y1="22.86" x2="129.54" y2="0" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="33.02" x2="129.54" y2="0" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
-<junction x="129.54" y="22.86"/>
-<pinref part="LAMP" gate="G$1" pin="P2"/>
-<pinref part="AC" gate="G$1" pin="P1"/>
+<pinref part="AC+LAMP" gate="G$1" pin="P$2"/>
+<wire x1="134.62" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -2156,9 +2158,11 @@ The old path of data sheet not more available 2013-05-06.</description>
 <wire x1="127" y1="17.78" x2="127" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="AC1"/>
 <wire x1="127" y1="7.62" x2="124.46" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="AC+LAMP" gate="G$1" pin="P$3"/>
+<wire x1="134.62" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
 <junction x="127" y="17.78"/>
-<pinref part="AC" gate="G$1" pin="P2"/>
 </segment>
 </net>
 <net name="N$13" class="0">
