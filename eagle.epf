@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-7.5.0/lbr/frames.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/41xx.lbr"
@@ -368,12 +369,5 @@ UsedLibrary="/Users/hbb/D/dev/projects/eagle_projects/myblog_library/myblog_libr
 UsedLibrary="/Users/hbb/D/dev/projects/eagle_projects/headers(.1in).lbr"
 UsedLibrary="/Users/hbb/D/dev/projects/eagle_projects/headers(.1in)(samtec).lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="0 23 599 422"
-State=2
-Number=0
-
 [Desktop]
 Screen="1280 800"
-Window="Win_1"
