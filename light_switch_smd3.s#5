@@ -1989,6 +1989,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="AC+LAMP" library="myblog_library" deviceset="DG350-3.5-03P" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="BT136" library="myblog_library" deviceset="BT136" device=""/>
+<part name="LAMP" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -2015,6 +2016,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="AC+LAMP" gate="G$1" x="144.78" y="35.56" rot="MR0"/>
 <instance part="J1" gate="G$1" x="53.34" y="91.44"/>
 <instance part="BT136" gate="G$1" x="119.38" y="27.94"/>
+<instance part="LAMP" gate="G$1" x="144.78" y="50.8" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2113,8 +2115,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="OK1" gate="-1" pin="A2"/>
 <wire x1="93.98" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="AC+LAMP" gate="G$1" pin="P$1"/>
-<pinref part="BT136" gate="G$1" pin="T2"/>
+<pinref part="LAMP" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="50.8" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="BT136" gate="G$1" pin="T2"/>
 <wire x1="119.38" y1="35.56" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
 <junction x="119.38" y="38.1"/>
 </segment>
@@ -2126,6 +2131,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="129.54" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
 <pinref part="AC+LAMP" gate="G$1" pin="P$2"/>
 <wire x1="134.62" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="LAMP" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="48.26" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<junction x="129.54" y="33.02"/>
 </segment>
 </net>
 <net name="N$12" class="0">

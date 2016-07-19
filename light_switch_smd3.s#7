@@ -223,20 +223,30 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="EIA3216">
-<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0.127" layer="21"/>
-<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="0603-POL">
+<description>Polarized footprint for tantalum 0603 sized capacitors.</description>
+<wire x1="-1.1" y1="-0.8" x2="-1.7" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.7" y1="0.8" x2="-1.1" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.8" x2="1.5" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="-0.8" x2="1.9" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="-0.4" x2="1.9" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="0.4" x2="1.5" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="0.8" x2="1.1" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.027940625" x2="0" y2="-0.027940625" width="0.381" layer="21"/>
+<smd name="K" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="A" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<circle x="1.7" y="0" radius="0.05" width="0.15" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -254,21 +264,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="10UF-16V-10%(TANT)" prefix="C" uservalue="yes">
-<description>CAP-00811&lt;BR&gt;
-1206/EIA-3216 Tantalum capacitor</description>
+<deviceset name="10UF-6.3V-20%(0603)(TANT)" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EIA3216">
+<device name="&quot;" package="0603-POL">
 <connects>
 <connect gate="G$1" pin="+" pad="A"/>
-<connect gate="G$1" pin="-" pad="C"/>
+<connect gate="G$1" pin="-" pad="K"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-00811"/>
+<attribute name="PROD_ID" value="CAP-13210" constant="no"/>
 <attribute name="VALUE" value="10uF" constant="no"/>
 </technology>
 </technologies>
@@ -564,6 +572,25 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="3.3MOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
+<description>RES-11057</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11057" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>&lt;b&gt;Resistor&lt;/b&gt;
 Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
@@ -1116,11 +1143,12 @@ The old path of data sheet not more available 2013-05-06.</description>
 <pad name="5V_GND" x="2.82" y="17.71" drill="1" diameter="1.6764" rot="R90"/>
 <pad name="AC1" x="32.14" y="12.44" drill="1" diameter="1.6764"/>
 <pad name="AC2" x="32.14" y="7.56" drill="1" diameter="1.6764"/>
-<rectangle x1="0" y1="0" x2="35" y2="20" layer="21"/>
 <text x="-0.77" y="21.12" size="1.27" layer="21">Hi-LINK 5VAC-DC</text>
-<dimension x1="2.8" y1="17.7" x2="2.8" y2="2.3" x3="-2.5" y3="10" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
-<dimension x1="32.1" y1="12.4" x2="32.1" y2="7.5" x3="37.2" y3="9.95" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
-<dimension x1="2.8" y1="17.7" x2="32.1" y2="17.7" x3="17.45" y3="21.7" textsize="0.4064" textratio="1" layer="21" width="0.1" precision="1" visible="yes"/>
+<wire x1="3.81" y1="20.32" x2="35.56" y2="20.32" width="0.127" layer="21"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="0" width="0.127" layer="21"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="20.32" width="0.127" layer="21"/>
+<wire x1="0" y1="20.32" x2="3.81" y2="20.32" width="0.127" layer="21"/>
 </package>
 <package name="DG350-3.5-03P">
 <pad name="P$2" x="0" y="0" drill="0.8"/>
@@ -1942,15 +1970,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </classes>
 <parts>
 <part name="LM1117" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223" value="LM1117"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="3.3K"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="3.3K"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="3.3K"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="3.3K"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="3.3K"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="430"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="470"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="430"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="470"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
