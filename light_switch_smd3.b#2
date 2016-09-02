@@ -140,22 +140,21 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.6" y1="1.6" x2="36.5" y2="1.6" width="0" layer="20"/>
+<wire x1="1.1" y1="1.7" x2="36.5" y2="1.6" width="0" layer="20"/>
 <wire x1="36.5" y1="1.6" x2="36.5" y2="36.6" width="0" layer="20"/>
-<wire x1="36.5" y1="36.6" x2="0.6" y2="36.6" width="0" layer="20"/>
-<wire x1="0.6" y1="36.6" x2="0.6" y2="1.6" width="0" layer="20"/>
+<wire x1="36.5" y1="36.6" x2="1.1" y2="36.7" width="0" layer="20"/>
+<wire x1="1.1" y1="36.7" x2="1.1" y2="1.7" width="0" layer="20"/>
 <wire x1="1.9" y1="2.5" x2="1.6" y2="2.7" width="2.1844" layer="46"/>
 <wire x1="1.6" y1="2.7" x2="1.6" y2="7.1" width="2.1844" layer="46"/>
 <wire x1="4.1" y1="35.6" x2="4.1" y2="32.9" width="2.1844" layer="46"/>
-<wire x1="4.1" y1="32.9" x2="2.7" y2="31.5" width="2.1844" layer="46"/>
-<wire x1="2.7" y1="31.5" x2="1.4" y2="30.1" width="2.1844" layer="46"/>
+<wire x1="4.1" y1="32.9" x2="1.8" y2="30.6" width="2.1844" layer="46"/>
 <wire x1="33.7" y1="22.4" x2="10.2" y2="22.4" width="2.1844" layer="46"/>
 <wire x1="10.2" y1="22.4" x2="9.6" y2="19.9" width="2.1844" layer="46"/>
 <wire x1="9.6" y1="19.9" x2="3.2" y2="19.9" width="2.1844" layer="46"/>
 <text x="22.2" y="2" size="1.778" layer="26" rot="MR90">Hristo Borisov
 Light Switch
 Prototype
-Rev. 0.7</text>
+Rev. 0.8</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -679,7 +678,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="11.9538" y="26.7288" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="9.03" y="25.225" size="1.27" layer="27"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" package="1X01" value="" x="21.4" y="4.1"/>
+<element name="5V" library="SparkFun-Connectors" package="1X01" value="" x="21.4" y="4.1" smashed="yes">
+<attribute name="NAME" x="19.7938" y="6.0288" size="1.27" layer="25"/>
+<attribute name="VALUE" x="20.13" y="0.925" size="1.27" layer="27"/>
+</element>
 <element name="J3" library="SparkFun-Connectors" package="1X01" value="" x="8.1" y="7.7"/>
 </elements>
 <signals>
@@ -836,7 +838,7 @@ design rules under a new name.</description>
 <wire x1="15.3914" y1="13.6086" x2="16.1" y2="12.9" width="0.4064" layer="1"/>
 <wire x1="16.1" y1="12.9" x2="16.1" y2="9.29" width="0.4064" layer="1"/>
 <wire x1="16.1" y1="9.29" x2="16.08" y2="9.27" width="0.4064" layer="1"/>
-<contactref element="J2" pad="1"/>
+<contactref element="5V" pad="1"/>
 <wire x1="21.4" y1="4.1" x2="18.88" y2="4.1" width="0.4064" layer="16"/>
 <wire x1="18.88" y1="4.1" x2="18.88" y2="4.15" width="0.4064" layer="16"/>
 </signal>

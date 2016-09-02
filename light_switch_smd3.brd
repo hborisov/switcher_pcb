@@ -151,10 +151,13 @@
 <wire x1="33.7" y1="22.4" x2="10.2" y2="22.4" width="2.1844" layer="46"/>
 <wire x1="10.2" y1="22.4" x2="9.6" y2="19.9" width="2.1844" layer="46"/>
 <wire x1="9.6" y1="19.9" x2="3.2" y2="19.9" width="2.1844" layer="46"/>
-<text x="22.2" y="2" size="1.778" layer="26" rot="MR90">Hristo Borisov
+<text x="23.2" y="1.9" size="1.778" layer="26" rot="MR90">Hristo Borisov
 Light Switch
 Prototype
 Rev. 0.8</text>
+<text x="14" y="30.4" size="1.778" layer="25">L</text>
+<text x="10.1" y="30.3" size="1.778" layer="25">N</text>
+<text x="4.6" y="30.1" size="1.778" layer="25">LMP</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
