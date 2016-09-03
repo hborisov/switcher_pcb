@@ -1,4 +1,4 @@
-output_files/
+output_files/**
 .DS_Store
 *b#*
 *s#*
