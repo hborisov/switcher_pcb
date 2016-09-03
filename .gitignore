@@ -1,2 +1,5 @@
 output_files/
 .DS_Store
+*b#*
+*s#*
+*.lck
